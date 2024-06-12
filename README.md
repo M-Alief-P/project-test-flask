@@ -32,7 +32,7 @@ flask --app flaskr run --debug
 
 **Path :**
 
-> /recommendation
+> /recommend_food
 
 **Method :**
 
@@ -56,7 +56,7 @@ flask --app flaskr run --debug
 
 ## Test in Postman
 
-- Enter the following URL using the POST method: <http://localhost:5000/recommendation>
+- Enter the following URL using the POST method: <http://localhost:5000/recommend_food>
 - Press the 'Body' section and choose 'RAW', then select JSON as the format.
 - For testing, enter the following data:
 
