@@ -87,12 +87,12 @@ def get_food_recommendations(latitude, longitude, restaurants_data, model_path, 
     recommended_restaurants_df = recommended_restaurants_df.sort_values(by='distance')
 
     # Mengambil 10 restoran terdekat
-    recommended_restaurants = recommended_restaurants_df.head(30)[['nama', 'distance']].values.tolist()
+    recommended_restaurants = recommended_restaurants_df.head(10)[['nama', 'distance']].values.tolist()
     
     return recommended_restaurants
 
 
-@app.route('/recommendation', methods=['POST'])
+@app.route('/recommend_food', methods=['POST'])
 def recommend_food():
     data = request.json
     latitude = data['latitude']
