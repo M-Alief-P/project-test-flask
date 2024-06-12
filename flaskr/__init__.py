@@ -18,7 +18,7 @@ def get_distance_with_google_maps(latitude1, longitude1, latitude2, longitude2):
     Returns:
         float: Jarak antara dua titik dalam kilometer.
     """
-    gmaps = googlemaps.Client(key='AIzaSyBGneXInfhvRvjz-s0sCQYNTODmEPo0dIY')
+    gmaps = googlemaps.Client(key='YOUR GMAPS API KEY')
 
     # Menentukan lokasi awal dan tujuan
     origin = f"{latitude1},{longitude1}"

@@ -34,6 +34,12 @@ restaurants_data = pd.read_json('YOUR JSON PATH')
 model_path = 'YOUR TENSORFLOW LITE PATH'
 ```
 
+- Fill GMAPS API KEY with your personal API KEY
+
+```sh
+gmaps = googlemaps.Client(key='YOUR GMAPS API KEY')
+```
+
 - Run the project
 
 ```sh
