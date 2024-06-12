@@ -22,6 +22,18 @@ source venv/bin/activate
 pip install -r requirements. txt
 ```
 
+- Adjust the JSON data and Tensorflow path (with absolute path) in init.py in the following code:
+
+```sh
+# Data restoran dari file JSON
+restaurants_data = pd.read_json('YOUR JSON PATH')
+```
+
+```sh
+# Path menuju file TensorFlow Lite model
+model_path = 'YOUR TENSORFLOW LITE PATH'
+```
+
 - Run the project
 
 ```sh

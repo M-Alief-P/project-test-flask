@@ -98,11 +98,11 @@ def recommend_food():
     latitude = data['latitude']
     longitude = data['longitude']
     
-    # Contoh data restoran dari file JSON
-    restaurants_data = pd.read_json('/home/yanz/Music/project-flask/flaskr/data/data.json')
+    # Data restoran dari file JSON
+    restaurants_data = pd.read_json('YOUR JSON PATH')
     
     # Path menuju file TensorFlow Lite model
-    model_path = '/home/yanz/Music/project-flask/flaskr/models/model.tflite'
+    model_path = 'YOUR TENSORFLOW LITE PATH'
     
     recommended_food = get_food_recommendations(latitude, longitude, restaurants_data, model_path)
     
