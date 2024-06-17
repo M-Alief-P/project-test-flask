@@ -56,7 +56,7 @@ flask --app flaskr run --debug
 
 > `POST`
 
-```json
+```json 
 [
   {
     "id_restaurant": 1,
